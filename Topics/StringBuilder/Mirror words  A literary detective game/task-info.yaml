@@ -1,0 +1,13 @@
+type: code
+custom_name: "Mirror words: A literary detective game"
+files:
+  - name: src/Main.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/49115#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Mon, 13 Jan 2025 19:00:14 UTC"
+record: -1
+submission_language: java17
