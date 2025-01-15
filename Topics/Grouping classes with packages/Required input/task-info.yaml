@@ -1,0 +1,16 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: import static java.lang.*;
+  - text: import org.hyperskill.*;
+  - text: import java.lang.*;
+  - text: import java.lang.String;
+  - text: import static java.lang.System.out;
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/2043#comment
+status: Solved
+record: -1
+local_check: false

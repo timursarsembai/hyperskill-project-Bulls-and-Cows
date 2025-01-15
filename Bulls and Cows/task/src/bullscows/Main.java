@@ -1,31 +1,58 @@
 package bullscows;
 
 import java.util.Scanner;
-import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Random;
 import java.util.Collections;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        String[] array = {
+                "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
+                "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p",
+                "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"
+        };
 
-        int numberOfDigits = scanner.nextInt() ; // Диапазон числа, от 0 до n
-        scanner.nextLine();
+        System.out.println("Input the length of the secret code:");
+        int numberOfSymbols = scanner.nextInt() ;
 
-        if (numberOfDigits < 0 || numberOfDigits > 9) {
+        System.out.println("Input the number of possible symbols in the code:");
+        int numberVariantOfSymbols = scanner.nextInt();
+
+        while(true) {
+            if (numberVariantOfSymbols < numberOfSymbols) {
+                System.out.println("The number of possible symbols cannot fall short of the length of the secret code. Try again.");
+                numberVariantOfSymbols = scanner.nextInt();
+            } else {
+                scanner.nextLine();
+                break;
+            }
+        }
+
+        if (numberOfSymbols < 0 || numberOfSymbols > 9) {
             System.out.println("Error: can't generate a secret number with a length of 11 because there aren't enough unique digits.");
         } else {
-            String numStr = generateRandomNumber(numberOfDigits); // Получаем псевдослучайное число
+            String secretCode = generateRandomNumber(numberOfSymbols, numberVariantOfSymbols, array); // Получаем псевдослучайные символы
 
             // Извлекаем из случайного числа нужный диапазон чисел от 0 до n
-            String secretCode = numStr.substring(0, numberOfDigits);
             String[] arrCode = secretCode.split(""); // Преобразуем случайное число в массив
 
-            boolean flag = true;
+            String stars = "";
+            for (int i = 1; i <= numberOfSymbols; i++) stars += "*";
+            char lastLetter = 'a';
+            for (int i = 1; i < numberVariantOfSymbols - 10; i++) {
+                lastLetter++;
+            }
+            System.out.println("The secret is prepared: " + stars + " (0-9, a-" + lastLetter + ").");
+
+            System.out.println("Okay, let's start a game!");
 
             int step = 1;
-            System.out.println("Okay, let's start a game!");
             System.out.println("Turn " + step + ":");
+
+            boolean flag = true;
 
             while (flag) {
                 // Ввод пользователя (угадывание числа)
@@ -37,7 +64,7 @@ public class Main {
                 int bulls = nums[0], cows = nums[1];
 
                 // Определяем победителя
-                flag = isGameOver(bulls, cows, numberOfDigits);
+                flag = isGameOver(bulls, cows, numberOfSymbols);
 
                 step++;
                 System.out.println("Turn " + step + ":");
@@ -90,32 +117,21 @@ public class Main {
         return new int[] {bulls, cows};
     }
 
-    public static String generateRandomNumber(int digits) {
-        if (digits <= 0 || digits > 10) {
-            throw new IllegalArgumentException("Количество цифр должно быть от 1 до 10.");
+    public static String generateRandomNumber(int digits, int indexes, String[] array) {
+        if (digits <= 0 || digits > 36) {
+            throw new IllegalArgumentException("Количество символов должно быть от 0 до 36 включительно.");
         }
+        List<String> symbolList = Arrays.asList(array).subList(0, indexes);
+        Random random = new Random();
 
-        // Создаём список цифр от 0 до 9
-        List<Integer> digitList = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
-            digitList.add(i);
-        }
+        Collections.shuffle(symbolList, random);
 
-        // Перемешиваем список случайным образом
-        Collections.shuffle(digitList);
-
-        // Собираем первые n цифр из перемешанного списка
         StringBuilder number = new StringBuilder();
         for (int i = 0; i < digits; i++) {
-            number.append(digitList.get(i));
-        }
-
-        // Если первая цифра 0 (для чисел с несколькими цифрами), переставляем её
-        if (number.charAt(0) == '0' && digits > 1) {
-            number.setCharAt(0, number.charAt(1));
-            number.setCharAt(1, '0');
+            number.append(symbolList.get(i));
         }
 
         return number.toString();
     }
+
 }
