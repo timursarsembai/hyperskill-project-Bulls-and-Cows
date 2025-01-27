@@ -1,0 +1,28 @@
+type: table
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/2202#comment
+status: Solved
+record: -1
+rows:
+  - base class
+  - child class
+  - parent class
+  - derived class
+  - extended class
+columns:
+  - superclass
+  - subclass
+selected:
+  - - false
+    - false
+  - - false
+    - false
+  - - false
+    - false
+  - - false
+    - false
+  - - false
+    - false

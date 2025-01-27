@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="distributionType" value="WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Bulls and Cows/task" />
+            <option value="$PROJECT_DIR$/Bulls and Cows/task/build/classes/java" />
+            <option value="$PROJECT_DIR$/Bulls and Cows/task/build/generated/sources/annotationProcessor/java" />
+            <option value="$PROJECT_DIR$/Bulls and Cows/task/build/generated/sources/headers/java" />
+            <option value="$PROJECT_DIR$/Bulls and Cows/task/build/reports/tests" />
+            <option value="$PROJECT_DIR$/Bulls and Cows/task/build/test-results" />
+            <option value="$PROJECT_DIR$/Bulls and Cows/task/build/tmp" />
+            <option value="$PROJECT_DIR$/Topics/Exception handling/Catch all exceptions" />
+            <option value="$PROJECT_DIR$/Topics/Exception handling/Executed blocks" />
+            <option value="$PROJECT_DIR$/Topics/Exception handling/Handling exceptions in division operations" />
+            <option value="$PROJECT_DIR$/Topics/Exception handling/Method named process" />
+            <option value="$PROJECT_DIR$/Topics/Exception handling/Reading a file" />
+            <option value="$PROJECT_DIR$/Topics/Exception handling/Resolving the 'Divide by Zero' error in an application" />
+            <option value="$PROJECT_DIR$/Topics/Exception handling/String to double conversion" />
+            <option value="$PROJECT_DIR$/Topics/Exception handling/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Getters and setters/BankAccount Balance  Getters   Setters" />
+            <option value="$PROJECT_DIR$/Topics/Getters and setters/Book" />
+            <option value="$PROJECT_DIR$/Topics/Getters and setters/Choose a pair of getter and setter" />
+            <option value="$PROJECT_DIR$/Topics/Getters and setters/Complex" />
+            <option value="$PROJECT_DIR$/Topics/Getters and setters/Creating a class for a book with private properties" />
+            <option value="$PROJECT_DIR$/Topics/Getters and setters/Exploring Encapsulation in Java" />
+            <option value="$PROJECT_DIR$/Topics/Getters and setters/Implementing encapsulation in the 'Product' class" />
+            <option value="$PROJECT_DIR$/Topics/Getters and setters/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Grouping classes with packages/A keyword for importing a class" />
+            <option value="$PROJECT_DIR$/Topics/Grouping classes with packages/Binary search" />
+            <option value="$PROJECT_DIR$/Topics/Grouping classes with packages/Correct packages" />
+            <option value="$PROJECT_DIR$/Topics/Grouping classes with packages/Creating a 'Hello, World!' program with class definitions" />
+            <option value="$PROJECT_DIR$/Topics/Grouping classes with packages/Getting input" />
+            <option value="$PROJECT_DIR$/Topics/Grouping classes with packages/Required input" />
+            <option value="$PROJECT_DIR$/Topics/Grouping classes with packages/The default import" />
+            <option value="$PROJECT_DIR$/Topics/Grouping classes with packages/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Hierarchy of exceptions/BadRequestException" />
+            <option value="$PROJECT_DIR$/Topics/Hierarchy of exceptions/Base class" />
+            <option value="$PROJECT_DIR$/Topics/Hierarchy of exceptions/Base classes of RuntimeException" />
+            <option value="$PROJECT_DIR$/Topics/Hierarchy of exceptions/Overview the hierarchy" />
+            <option value="$PROJECT_DIR$/Topics/Hierarchy of exceptions/Subclasses of Exception" />
+            <option value="$PROJECT_DIR$/Topics/Hierarchy of exceptions/Subclasses of RuntimeException" />
+            <option value="$PROJECT_DIR$/Topics/Hierarchy of exceptions/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Hierarchy of exceptions/Unchecked exceptions" />
+            <option value="$PROJECT_DIR$/Topics/Inheritance/Classes for Hospital" />
+            <option value="$PROJECT_DIR$/Topics/Inheritance/Multiple names of superclasses and subclasses" />
+            <option value="$PROJECT_DIR$/Topics/Inheritance/Pet inheritance" />
+            <option value="$PROJECT_DIR$/Topics/Inheritance/The lost modifier" />
+            <option value="$PROJECT_DIR$/Topics/Inheritance/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Inheritance/Using inheritance to print car instance" />
+            <option value="$PROJECT_DIR$/Topics/Keyword  super/Accessing constructors of a base class" />
+            <option value="$PROJECT_DIR$/Topics/Keyword  super/Bank account" />
+            <option value="$PROJECT_DIR$/Topics/Keyword  super/Employees" />
+            <option value="$PROJECT_DIR$/Topics/Keyword  super/Fix the non-compiled hierarchy" />
+            <option value="$PROJECT_DIR$/Topics/Keyword  super/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Keyword  super/When the keyword is used" />
+            <option value="$PROJECT_DIR$/Topics/Keyword  super/Why we use the super keyword" />
+            <option value="$PROJECT_DIR$/Topics/Multiple constructors/Creating a Student class with multiple constructors" />
+            <option value="$PROJECT_DIR$/Topics/Multiple constructors/Creating a vehicle management system with default values" />
+            <option value="$PROJECT_DIR$/Topics/Multiple constructors/Employee" />
+            <option value="$PROJECT_DIR$/Topics/Multiple constructors/Entanglement" />
+            <option value="$PROJECT_DIR$/Topics/Multiple constructors/Suppose, you have a class" />
+            <option value="$PROJECT_DIR$/Topics/Multiple constructors/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Multiple constructors/Time" />
+            <option value="$PROJECT_DIR$/Topics/Multiple constructors/Understanding constructor overloading in a Circle class" />
+            <option value="$PROJECT_DIR$/Topics/Overloading/Overloading methods" />
+            <option value="$PROJECT_DIR$/Topics/Overloading/Theory" />
+            <option value="$PROJECT_DIR$/Topics/StringBuilder/Combining strings using a mutable sequence" />
+            <option value="$PROJECT_DIR$/Topics/StringBuilder/Create an email" />
+            <option value="$PROJECT_DIR$/Topics/StringBuilder/Immutability" />
+            <option value="$PROJECT_DIR$/Topics/StringBuilder/Mirror words  A literary detective game" />
+            <option value="$PROJECT_DIR$/Topics/StringBuilder/StringBuilder methods" />
+            <option value="$PROJECT_DIR$/Topics/StringBuilder/Theory" />
+            <option value="$PROJECT_DIR$/util" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
